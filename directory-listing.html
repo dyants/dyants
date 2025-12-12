@@ -80,8 +80,8 @@
                   <a href="#directory-listing.html">Directory Listing</a>
                 </li>
                 <a href="/directory-listing-2.html">Directory Listing 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
+                <!-- <li><a href="#">Dropdown 3</a></li>
+                <li><a href="#">Dropdown 4</a></li> -->
               </ul>
             </li>
 
@@ -182,10 +182,10 @@
                 data-aos="fade-left"
                 data-aos-delay="200"
               >
-                <h3>Project Information</h3>
+                <h3>Information</h3>
                 <ul>
                   <li><strong>Category</strong>: Penetration Testing</li>
-                  <li><strong>Client</strong>: -</li>
+                  <li><strong>Target</strong>: Web Hosting</li>
                   <li><strong>Project date</strong>: 01 September, 2025</li>
                   <li>
                     <strong>Project URL</strong>:
@@ -228,7 +228,7 @@
                 </p>
 
                 <div class="features mt-4">
-                  <h3>Hal apa saja ?</h3>
+                  <h3>Ringkasan Temuan</h3>
                   <div class="row gy-3">
                     <div class="col-md-6">
                       <div
@@ -237,10 +237,9 @@
                         data-aos-delay="400"
                       >
                         <i class="bi bi-check-circle-fill"></i>
-                        <h4>keamanan</h4>
+                        <h4>Tingkat Keparahan</h4>
                         <p>
-                          Dalam hal keamanan ini termasuk kategory medium karena
-                          dapat membaca isi dari file pada direktori.
+                          Kerentanan ini dikategorikan sebagai <b>Medium Severity</b> Karena memungkinkan pihak luar untuk membaca isi file yang berada dalam direktori tersebut.
                         </p>
                       </div>
                     </div>
@@ -252,11 +251,9 @@
                         data-aos-delay="500"
                       >
                         <i class="bi bi-shield-check"></i>
-                        <h4>Vulenrability</h4>
+                        <h4>Deskripsi Kerentanan</h4>
                         <p>
-                          Pada kasus ini termasuk kerenantan yang bisa membaca
-                          isi file, tujuannya untuk mencari tahu informasi
-                          keseluruhan file.
+                          Kerentanan ini memungkinkan akses langsung terhadap file dalam direktori tanpa autentikasi. Hal ini berpotensi mengungkap informasi melalui daftar file yang dapat diakses publik.
                         </p>
                       </div>
                     </div>
@@ -270,9 +267,7 @@
                         <i class="bi bi-graph-up"></i>
                         <h4>Dampak</h4>
                         <p>
-                          Dampak yang diberikan juga beragam seperti kebocoran
-                          informasi (Log) atau menemukan informasi user dari
-                          file tersebut.
+                          Kerentanan ini dapat menyebabkan kebocoran informasi, seperti file log, konfigurasi, atau data sensitif lain yang tersimpan di direktory tersebut. informasi dapat dimanfaatkan untuk serangan lanjutan.
                         </p>
                       </div>
                     </div>
@@ -286,9 +281,7 @@
                         <i class="bi bi-gear"></i>
                         <h4>Mitigasi</h4>
                         <p>
-                          Melakukan mitigasi pemeriksaan pada htacess di server,
-                          serta melakukan audit untuk meningkatkan keamanan
-                          sistem
+                          Melakukan konfigurasi ulang web server untuk menonaktifkan directori listing (misal melalui .htaccess, konfigurasi Nginx, atau Apache). Selain itu, dilakukan audit keamanan pada seluruh direktori untuk memastikan tidak ada folder lain yang dapat diakses secara publik.
                         </p>
                       </div>
                     </div>
