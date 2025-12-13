@@ -151,30 +151,13 @@
                 <div class="swiper-wrapper align-items-center">
                   <div class="swiper-slide">
                     <img
-                      src="assets/img/portfolio/portfolio-1.webp"
+                      src="assets/blog/dl3.png"
                       alt="Portfolio Image"
                       class="img-fluid"
                       loading="lazy"
                     />
                   </div>
 
-                  <div class="swiper-slide">
-                    <img
-                      src="assets/img/portfolio/portfolio-10.webp"
-                      alt="Portfolio Image"
-                      class="img-fluid"
-                      loading="lazy"
-                    />
-                  </div>
-
-                  <div class="swiper-slide">
-                    <img
-                      src="assets/img/portfolio/portfolio-7.webp"
-                      alt="Portfolio Image"
-                      class="img-fluid"
-                      loading="lazy"
-                    />
-                  </div>
                 </div>
                 <div class="swiper-pagination"></div>
               </div>
@@ -207,14 +190,14 @@
               >
                 <h2>Summary</h2>
                 <p>
-                  Saat melakukan pemeriksaan keamanan terhadap domain utama dan lebih dari 50 subdomain-nya saya berhasil menemukan kerentanan Directory Listing (atau Directory Traversal/Listing) pada sebuah subdomain, yaitu sub.domain.com.
+                  Saat melakukan pemeriksaan keamanan terhadap domain utama dan lebih dari 50 subdomain-nya saya berhasil menemukan kerentanan <b>Directory Listing</b> (atau <b>Directory Traversal/Listing</b>) pada sebuah subdomain, diserver iix155.domain.com. 
                 </p>
                 <p>
                   Kerentanan ini memungkinkan akses langsung terhadap masing-masing folder website user(pengguna). Hal ini berpotensi menampilkan informasi folder dan file yang tersimpan di dalamnya tanpa perlu autentikasi. 
                 </p>
 
                 <div class="features mt-4">
-                  <h3>Key Features</h3>
+                  <h3>Ringkasan Temuan</h3>
                   <div class="row gy-3">
                     <div class="col-md-6">
                       <div
@@ -223,11 +206,9 @@
                         data-aos-delay="400"
                       >
                         <i class="bi bi-check-circle-fill"></i>
-                        <h4>Responsive Design</h4>
+                        <h4>Tingkat Keparahan</h4>
                         <p>
-                          Voluptatum deleniti atque corrupti quos dolores et
-                          quas molestias excepturi sint occaecati cupiditate non
-                          provident
+                          Kerentanan ini dikategorikan sebagai Medium Severity Karena memungkinkan pihak luar untuk membaca isi file yang berada dalam direktori tersebut.
                         </p>
                       </div>
                     </div>
@@ -239,11 +220,9 @@
                         data-aos-delay="500"
                       >
                         <i class="bi bi-shield-check"></i>
-                        <h4>Advanced Security</h4>
+                        <h4>Deskripsi Kerentanan</h4>
                         <p>
-                          Minim veniam, quis nostrud exercitation ullamco
-                          laboris nisi ut aliquip ex ea commodo consequat tarad
-                          limino ata
+                          Kerentanan ini memungkinkan akses langsung terhadap file dalam direktori tanpa autentikasi. Hal ini berpotensi mengungkap informasi melalui daftar file yang dapat diakses publik.
                         </p>
                       </div>
                     </div>
@@ -255,10 +234,9 @@
                         data-aos-delay="600"
                       >
                         <i class="bi bi-graph-up"></i>
-                        <h4>Performance Optimization</h4>
+                        <h4>Dampak</h4>
                         <p>
-                          Duis aute irure dolor in reprehenderit in voluptate
-                          velit esse cillum dolore eu fugiat nulla pariatur
+                          Kerentanan ini dapat menyebabkan kebocoran informasi, seperti file log, konfigurasi, atau data sensitif lain yang tersimpan di direktory tersebut. informasi dapat dimanfaatkan untuk serangan lanjutan.
                         </p>
                       </div>
                     </div>
@@ -270,11 +248,9 @@
                         data-aos-delay="700"
                       >
                         <i class="bi bi-gear"></i>
-                        <h4>Easy Integration</h4>
+                        <h4>Mitigasi</h4>
                         <p>
-                          Excepteur sint occaecat cupidatat non proident, sunt
-                          in culpa qui officia deserunt mollit anim id est
-                          laborum
+                          Melakukan konfigurasi ulang web server untuk menonaktifkan directori listing (misal melalui .htaccess, konfigurasi Nginx, atau Apache). Selain itu, dilakukan audit keamanan pada seluruh direktori untuk memastikan tidak ada folder lain yang dapat diakses secara publik.
                         </p>
                       </div>
                     </div>
@@ -293,16 +269,12 @@
         <div class="copyright text-center">
           <p>
             © <span>Copyright</span>
-            <strong class="px-1 sitename">iPortfolio</strong>
+            <strong class="px-1 sitename">Dyants</strong>
             <span>All Rights Reserved</span>
           </p>
         </div>
         <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          Designed by <a href="https://dyants.me/">Dyants</a>
         </div>
       </div>
     </footer>
